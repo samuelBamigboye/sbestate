@@ -26,7 +26,7 @@ export default function Header() {
     <header className='bg-slate-200 shadow-md'>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
-          <img src="./src/assets/sbstatelogoblack.png" alt="sbestate" className='w-8 h-8' />
+          <img src="./src/assets/sbstatelogoblack.png" alt="sbestate" className='w-12 h-12' />
         </Link>
         <form
           onSubmit={handleSubmit}
