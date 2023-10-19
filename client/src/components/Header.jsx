@@ -2,6 +2,7 @@ import { FaSearch } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import image from '../assets/sbstatelogoblack.png'
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -26,7 +27,7 @@ export default function Header() {
     <header className='bg-slate-200 shadow-md'>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
-          <img src="./src/assets/sbstatelogoblack.png" alt="sbestate" className='w-12 h-12' />
+          <img src={image} alt="sbestate" className='w-12 h-12' />
         </Link>
         <form
           onSubmit={handleSubmit}
