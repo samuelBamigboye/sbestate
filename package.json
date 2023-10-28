@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@radix-ui/themes": "^2.0.0",
     "@reduxjs/toolkit": "^1.9.7",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",

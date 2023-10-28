@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Theme } from '@radix-ui/themes';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
@@ -13,7 +14,9 @@ import Search from './pages/Search';
 
 export default function App() {
   return (
+      <Theme appearance="dark">
     <BrowserRouter>
+
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -29,9 +32,10 @@ export default function App() {
           <Route
             path='/update-listing/:listingId'
             element={<UpdateListing />}
-          />
+            />
         </Route>
       </Routes>
     </BrowserRouter>
+            </Theme>
   );
 }
